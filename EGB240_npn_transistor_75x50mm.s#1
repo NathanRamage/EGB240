@@ -1014,8 +1014,7 @@ distributor RS Components</description>
 <part name="V+2" library="EGB240" deviceset="+3V" device=""/>
 <part name="GND5" library="EGB240" deviceset="GND" device=""/>
 <part name="D1" library="EGB240" deviceset="DIODE-DO35" device="DO35-P2.54"/>
-<part name="Q1" library="transistor-npn" deviceset="BC489*" device="" value="PN100"/>
-<part name="GND6" library="EGB240" deviceset="GND" device=""/>
+<part name="Q1" library="transistor-npn" deviceset="BC489*" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1043,10 +1042,6 @@ distributor RS Components</description>
 <instance part="D1" gate="G$1" x="81.28" y="53.34"/>
 <instance part="Q1" gate="G$1" x="96.52" y="38.1" rot="R270"/>
 <instance part="U1" gate="B" x="119.38" y="7.62"/>
-<instance part="U1" gate="D" x="-68.58" y="76.2"/>
-<instance part="U1" gate="E" x="-68.58" y="55.88"/>
-<instance part="U1" gate="F" x="-68.58" y="35.56"/>
-<instance part="GND6" gate="1" x="-83.82" y="17.78"/>
 </instances>
 <busses>
 </busses>
@@ -1086,18 +1081,6 @@ distributor RS Components</description>
 <pinref part="X1" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="129.54" y1="0" x2="129.54" y2="-10.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="-83.82" y1="20.32" x2="-83.82" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U1" gate="D" pin="I"/>
-<wire x1="-83.82" y1="35.56" x2="-83.82" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="55.88" x2="-83.82" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="76.2" x2="-78.74" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U1" gate="E" pin="I"/>
-<wire x1="-83.82" y1="55.88" x2="-78.74" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U1" gate="F" pin="I"/>
-<wire x1="-83.82" y1="35.56" x2="-78.74" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
